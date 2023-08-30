@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Inherited res.company form view -->
+        <record id="ap_personal_info_view_res_partner_inherit" model="ir.ui.view">
+            <field name="name">ap.personal.res.partner.form.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//notebook" position="inside">
+                        <page string="Personal Info">
+                            <group>
+                                <group>
+                                    <field name="id_no"/>
+                                    <field name="id_serial_no"/>
+                                    <field name="id_expiry_date"/>
+                                </group>
+                                 <group>
+                                    <field name="passport_no"/>
+                                    <field name="pp_issue_date"/>
+                                    <field name="pp_expiry_date"/>
+                                    <field name="birth_date"/>
+                                </group>
+                            </group>
+<!--                            <div class="o_row">-->
+<!--                                -->
+
+<!--                            </div>-->
+
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>
