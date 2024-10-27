@@ -9,6 +9,14 @@
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
                 <data>
+
+<!--                    <xpath expr="//field[@name='vat']" position="before">-->
+<!--                        <field name="island_id_domain" invisible="1"/>-->
+<!--                    </xpath>-->
+<!--                     <xpath expr="//field[@name='vat']" position="before">-->
+<!--                        <field name="island_id" domain="island_id_domain"/>-->
+<!--                    </xpath>-->
+
                     <xpath expr="//notebook" position="inside">
                         <page string="Personal Info">
                             <group>
@@ -16,20 +24,53 @@
                                     <field name="id_no"/>
                                     <field name="id_serial_no"/>
                                     <field name="id_expiry_date"/>
+                                    <field name="gender"/>
+<!--                                    <field name="x_occupation_type"/>-->
+<!--                                    <field name="x_birth_place_id"/>-->
+<!--                                    <field name="mother"/>-->
+<!--                                    <field name="father"/>-->
+
                                 </group>
                                  <group>
                                     <field name="passport_no"/>
                                     <field name="pp_issue_date"/>
                                     <field name="pp_expiry_date"/>
                                     <field name="birth_date"/>
+<!--                                    <field name="x_monthly_income"/>-->
                                 </group>
                             </group>
-<!--                            <div class="o_row">-->
-<!--                                -->
 
-<!--                            </div>-->
 
                         </page>
+                    </xpath>
+
+                    <xpath expr="//notebook" position="inside">
+                        <page string="Family Relations">
+
+<!--                            <field name="relation_ids">-->
+<!--                                    <tree>-->
+<!--                                        <field name="relation_type"/>-->
+<!--                                        <field name="relation_id"/>-->
+<!--                                    </tree>-->
+<!--                                    <form>-->
+<!--                                        <group>-->
+<!--                                            <group>-->
+<!--                                                <field name="relation_type"/>-->
+<!--                                                <field name="relation_id"/>-->
+<!--                                            </group>-->
+<!--                                        </group>-->
+
+<!--                                    </form>-->
+<!--                            </field>-->
+
+
+
+
+                        </page>
+
+
+
+
                     </xpath>
                 </data>
             </field>

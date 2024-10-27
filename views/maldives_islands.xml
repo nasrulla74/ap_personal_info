@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_maldive_islands" model="ir.actions.act_window">
+        <field name="name">Islands</field>
+        <field name="res_model">maldives.island</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+<!--    <menuitem id="menu_maldive_islands" name="Islands"-->
+<!--            parent="contacts.menu_localisation" action="action_maldive_islands"/>-->
+
+
+</odoo>
